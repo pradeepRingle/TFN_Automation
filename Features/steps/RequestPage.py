@@ -50,7 +50,7 @@ def steps_impl(context):
 
 @then(u'I click on unlock button')
 def steps_impl(context):
-    time.sleep(3)
+    time.sleep(5)
     context.lib.click_event(RequestPage.reqUnlock)
 
 
@@ -68,6 +68,11 @@ def steps_impl(context):
 @then(u'verify a pop up is generated with valid message')
 def step_impl(context):
     context.lib.verify_mandatory_message(RequestPage.reqPopUpMessage)
+
+
+@then(u'I Click on Cancel Button')
+def steps_impl(context):
+    context.lib.click_event(RequestPage.reqCancel)
 
 
 @then(u'I click on save button')

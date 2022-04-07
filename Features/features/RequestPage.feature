@@ -14,7 +14,8 @@ Feature: Request Feature
     Then I Check the record saved in request list
 
 
-#  @Editor
+
+  #  @Editor
     And I click on the Request Button
     And I click on unlock button
     Then I can edit record on Request List
@@ -34,6 +35,7 @@ Feature: Request Feature
     Then I can edit record on Request List
     Then I click on Add button
     And verify pop up is Display for requestor to add more TFNs
+    Then I Click on Cancel Button
 
 #  @AddNote
     And I click on the Request Button

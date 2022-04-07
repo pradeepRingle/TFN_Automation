@@ -47,6 +47,7 @@ class TFN_Library(BasePage):
         return self.wait_until_element_located(label).text
 
     def click_event(self, label):
+        self.is_loading_completed()
         self.wait_until_element_clickable(label).click()
         self.is_loading_completed()
 
